@@ -19,7 +19,7 @@ const SingleNote = ({note}) => {
 
     const onSubmit = data =>{
       console.log("clicked")
-      const url = `http://localhost:5000/parking/${notesId}`
+      const url = `https://secret-plains-16747.herokuapp.com/parking/${notesId}`
       fetch(url, {
         method : 'PUT',
         headers : {
@@ -42,7 +42,7 @@ const SingleNote = ({note}) => {
     const handleDelete = id =>{
         const procede = window.confirm('Are You Sure?');
         if(procede){
-          const url = `http://localhost:5000/parking/${id}`
+          const url = `https://secret-plains-16747.herokuapp.com/parking/${id}`
           fetch(url, {
             method : "DELETE"
           })

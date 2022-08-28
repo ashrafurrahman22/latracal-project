@@ -15,7 +15,7 @@ const Home = () => {
   const onSubmit = data => {
     console.log(data)
 
-    axios.post('http://localhost:5000/parking', data)
+    axios.post('https://secret-plains-16747.herokuapp.com/parking', data)
     .then(response =>{
       const {data} = response;
       console.log(response);
